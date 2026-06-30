@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mya Thandar Ko | Portfolio</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#1B263B",
+                        secondary: "#415A77",
+                        accent: "#C97B63",
+                        light: "#F8FAFC",
+                        dark: "#0F172A"
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        .nav-link { 
+            position: relative; 
+            transition: 0.3s; 
+            color: #1B263B; 
+        }
+        .nav-link::after { 
+            content: ""; 
+            position: absolute; 
+            left: 0; 
+            bottom: -4px; 
+            width: 0%; 
+            height: 2px; 
+            background: #C97B63; 
+            transition: 0.3s; 
+        }
+        .nav-link:hover::after { 
+            width: 100%; 
+        }
+        html { 
+            scroll-behavior: smooth; 
+        }
+        section { 
+            scroll-margin-top: 100px; 
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 scroll-smooth">
+
+<header class="fixed top-0 left-0 w-full bg-white/90 backdrop-blur-md shadow-sm z-50">
+    <div class="max-w-7xl mx-auto flex justify-between items-center px-8 py-5">
+        <a href="#home" class="text-2xl font-extrabold tracking-wider text-primary font-mono hover:text-accent duration-300">
+           <span class="text-accent">PORTFOLIO</span>
+        </a>
+        <nav class="hidden md:flex gap-10 font-medium">
+            <a href="#home" class="nav-link">Home</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#skills" class="nav-link">Skills</a>
+            <a href="#projects" class="nav-link">Projects</a>
+            <a href="#education" class="nav-link">Education</a>
+            <a href="#contact" class="nav-link">Contact</a>
+        </nav>
+        <button id="menuBtn" class="md:hidden text-3xl">☰</button>
+    </div>
+</header>
+
+<div id="mobileMenu" class="fixed top-0 right-[-100%] w-64 h-screen bg-white shadow-xl duration-500 z-40">
+    <div class="p-8 space-y-6 mt-20">
+        <a href="#home" class="block font-medium text-primary hover:text-accent">Home</a>
+        <a href="#about" class="block font-medium text-primary hover:text-accent">About</a>
+        <a href="#skills" class="block font-medium text-primary hover:text-accent">Skills</a>
+        <a href="#projects" class="block font-medium text-primary hover:text-accent">Projects</a>
+        <a href="#education" class="block font-medium text-primary hover:text-accent">Education</a>
+        <a href="#contact" class="block font-medium text-primary hover:text-accent">Contact</a>
+    </div>
+</div>
+
+<section id="home" class="min-h-screen flex items-center pt-20">
+    <div class="max-w-7xl mx-auto px-8 grid lg:grid-cols-2 gap-16 items-center w-full">
+        <div>
+            <p class="uppercase tracking-[5px] text-accent font-semibold mb-5">Software Development Intern</p>
+            <h2 class="text-5xl lg:text-6xl font-extrabold leading-tight">Hello,<br>I'm <span class="text-secondary">Mya Thandar Ko</span></h2>
+            <p class="text-slate-600 mt-8 leading-8 text-lg">Passionate web developer focused on building clean, responsive and user-friendly web applications using HTML, CSS, JavaScript and modern frontend technologies.</p>
+            <div class="flex gap-5 mt-10">
+                <a href="#projects" class="bg-primary text-white px-8 py-4 rounded-xl font-medium shadow-md hover:bg-secondary transition-all duration-300">View Projects</a>
+                
+            </div>
+        </div>
+        <div class="flex justify-center">
+            <div class="relative w-80 h-80 rounded-[40px] bg-gradient-to-br from-secondary to-primary p-1 overflow-hidden shadow-lg" style="width: 320px; height: 320px;">
+                <img src="mya.jpg" alt="Profile" class="w-full h-full" style="width: 100%; height: 100%; object-fit: cover; object-position: center; transform: scale(1.35); border-radius: 36px; display: block;">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="about" class="py-24 bg-white">
+    <div class="max-w-4xl mx-auto px-6 lg:px-8 text-center">
+        <div class="mb-12">
+            <span class="text-xs font-bold uppercase tracking-widest text-accent block mb-2">Who I Am</span>
+            <h2 class="text-4xl font-extrabold text-primary tracking-tight">About Me</h2>
+            <div class="w-12 h-1 bg-accent mx-auto mt-4 rounded-full"></div>
+        </div>
+        <div class="space-y-8 max-w-3xl mx-auto">
+            <h3 class="text-2xl lg:text-3xl font-bold text-secondary">Future Front-End Developer</h3>
+            <p class="text-slate-600 leading-relaxed text-base lg:text-lg max-w-2xl mx-auto">I'm a passionate web developer currently learning HTML, CSS, JavaScript, Tailwind CSS, and React. I enjoy creating responsive websites with clean UI and smooth user experiences.</p>
+            <div class="grid sm:grid-cols-2 gap-6 pt-6 max-w-xl mx-auto">
+                <div class="bg-slate-50 p-6 rounded-2xl border border-slate-100 shadow-sm flex flex-col items-center justify-center">
+                    <div class="text-2xl mb-2">💼</div>
+                    <h4 class="font-bold text-slate-800 text-base mb-1">Experience</h4>
+                    <p class="text-slate-500 text-sm">Internship Ready</p>
+                </div>
+                <div class="bg-slate-50 p-6 rounded-2xl border border-slate-100 shadow-sm flex flex-col items-center justify-center">
+                    <div class="text-2xl mb-2">🚀</div>
+                    <h4 class="font-bold text-slate-800 text-base mb-1">Projects</h4>
+                    <p class="text-slate-500 text-sm">5+ Personal Projects</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="skills" class="py-24 bg-slate-50">
+    <div class="max-w-6xl mx-auto px-6 lg:px-8">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl font-bold text-primary">Skills & Tools</h2>
+            <div class="w-24 h-1 bg-accent mx-auto mt-4 rounded-full"></div>
+        </div>
+        <div class="space-y-12">
+            <div>
+                <h3 class="text-xl font-bold text-secondary mb-6 flex items-center gap-2">💻 Programming Languages & Web</h3>
+                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4">
+                    <div class="bg-white p-5 rounded-2xl shadow-sm border border-slate-100 flex flex-col items-center justify-center hover:shadow-md duration-300">
+                        <div class="text-4xl mb-3">🌐</div><span class="font-bold text-slate-700 text-sm">HTML5</span>
+                    </div>
+                    <div class="bg-white p-5 rounded-2xl shadow-sm border border-slate-100 flex flex-col items-center justify-center hover:shadow-md duration-300">
+                        <div class="text-4xl mb-3">🎨</div><span class="font-bold text-slate-700 text-sm">CSS3 / Tailwind</span>
+                    </div>
+                    <div class="bg-white p-5 rounded-2xl shadow-sm border border-slate-100 flex flex-col items-center justify-center hover:shadow-md duration-300">
+                        <div class="text-4xl mb-3">⚡</div><span class="font-bold text-slate-700 text-sm">JavaScript</span>
+                    </div>
+                    <div class="bg-white p-5 rounded-2xl shadow-sm border border-slate-100 flex flex-col items-center justify-center hover:shadow-md duration-300">
+                        <div class="text-4xl mb-3">⚙️</div><span class="font-bold text-slate-700 text-sm">C++</span>
+                    </div>
+                    <div class="bg-white p-5 rounded-2xl shadow-sm border border-slate-100 flex flex-col items-center justify-center hover:shadow-md duration-300">
+                        <div class="text-4xl mb-3">☕</div><span class="font-bold text-slate-700 text-sm">Java</span>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h3 class="text-xl font-bold text-secondary mb-6 flex items-center gap-2">🛠️ Tools & Databases</h3>
+                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+                    <div class="bg-white p-5 rounded-2xl shadow-sm border border-slate-100 flex flex-col items-center justify-center hover:shadow-md duration-300">
+                        <div class="text-4xl mb-3">🌿</div><span class="font-bold text-slate-700 text-sm">Git</span>
+                    </div>
+                    <div class="bg-white p-5 rounded-2xl shadow-sm border border-slate-100 flex flex-col items-center justify-center hover:shadow-md duration-300">
+                        <div class="text-4xl mb-3">🐙</div><span class="font-bold text-slate-700 text-sm">GitHub</span>
+                    </div>
+                    <div class="bg-white p-5 rounded-2xl shadow-sm border border-slate-100 flex flex-col items-center justify-center hover:shadow-md duration-300">
+                        <div class="text-4xl mb-3">📝</div><span class="font-bold text-slate-700 text-sm">VS Code</span>
+                    </div>
+                    <div class="bg-white p-5 rounded-2xl shadow-sm border border-slate-100 flex flex-col items-center justify-center hover:shadow-md duration-300">
+                        <div class="text-4xl mb-3">🗄️</div><span class="font-bold text-slate-700 text-sm">MySQL / DB</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="projects" class="py-24 bg-white border-t border-slate-100">
+    <div class="max-w-7xl mx-auto px-8">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl font-bold text-primary">My Projects</h2>
+            <div class="w-24 h-1 bg-accent mx-auto mt-4 rounded-full"></div>
+        </div>
+        <div class="mb-12">
+            <h3 class="text-2xl font-bold text-secondary mb-6 flex items-center gap-2">🎓 Academic Projects (Local Deployment via Peer Device)</h3>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-slate-50 p-6 rounded-2xl shadow-sm border-l-4 border-accent hover:-translate-y-2 duration-300">
+                    <span class="text-xs font-semibold bg-accent/10 text-accent px-3 py-1 rounded-full">University Project</span>
+                    <h4 class="text-xl font-bold mt-3 mb-2">Blood Bank Management System</h4>
+                    <p class="text-slate-600 mb-4">A system designed to manage blood donor records, blood type availability, and requests to streamline operations between donors and hospitals.</p>
+                    <div class="flex gap-2 text-xs font-mono text-slate-500"><span>C#</span> <span>#Database</span></div>
+                </div>
+                <div class="bg-slate-50 p-6 rounded-2xl shadow-sm border-l-4 border-accent hover:-translate-y-2 duration-300">
+                    <span class="text-xs font-semibold bg-accent/10 text-accent px-3 py-1 rounded-full">University Project</span>
+                    <h4 class="text-xl font-bold mt-3 mb-2">Hotel Booking Website</h4>
+                    <p class="text-slate-600 mb-4">A responsive web prototype designed for a hotel room booking system, utilizing core frontend technologies for a clean and smooth user interface.</p>
+                    <div class="flex gap-2 text-xs font-mono text-slate-500"><span>#HTML</span> <span>#CSS</span></div>
+                </div>
+                <div class="bg-slate-50 p-6 rounded-2xl shadow-sm border-l-4 border-accent hover:-translate-y-2 duration-300">
+                    <span class="text-xs font-semibold bg-accent/10 text-accent px-3 py-1 rounded-full">University Project</span>
+                    <h4 class="text-xl font-bold mt-3 mb-2">Go-Go Squid Fashion Website</h4>
+                    <p class="text-slate-600 mb-4">A stylized fashion e-commerce storefront inspired by the "Go-Go Squid" theme, featuring interactive product catalog filtering and modern responsive layouts.</p>
+                    <div class="flex gap-2 text-xs font-mono text-slate-500"><span>#HTML/CSS</span> <span>#JavaScript</span></div>
+                </div>
+            </div>
+        </div>
+        <hr class="border-slate-200 my-12">
+        
+        <div>
+            <h3 class="text-2xl font-bold text-secondary mb-6 flex items-center gap-2">💻 Personal Projects</h3>
+            <div class="grid md:grid-cols-3 gap-8">
+                <a href="https://myathandarko4-lgtm.github.io/myaToDoList/" target="_blank" class="block bg-slate-50 p-6 rounded-2xl shadow-sm border border-transparent hover:border-primary/20 hover:-translate-y-2 duration-300">
+                    <span class="text-xs font-semibold bg-primary/10 text-primary px-3 py-1 rounded-full">Personal</span>
+                    <h4 class="text-xl font-bold mt-3 mb-2 flex items-center justify-between">
+                        Todo App <span class="text-xs text-slate-400 font-normal">View Live ↗</span>
+                    </h4>
+                    <p class="text-slate-600">Simple task manager using JS local storage to keep track of daily tasks seamlessly.</p>
+                </a>
+                
+                <a href="https://myathandarko4-lgtm.github.io/myaCalculator/" target="_blank" class="block bg-slate-50 p-6 rounded-2xl shadow-sm border border-transparent hover:border-primary/20 hover:-translate-y-2 duration-300">
+                    <span class="text-xs font-semibold bg-primary/10 text-primary px-3 py-1 rounded-full">Personal</span>
+                    <h4 class="text-xl font-bold mt-3 mb-2 flex items-center justify-between">
+                        Calculator <span class="text-xs text-slate-400 font-normal">View Live ↗</span>
+                    </h4>
+                    <p class="text-slate-600">Basic calculator featuring a clean user interface and responsive alignment.</p>
+                </a>
+                
+                <a href="https://myathandarko4-lgtm.github.io/myaStudentManagementSystem/" target="_blank" class="block bg-slate-50 p-6 rounded-2xl shadow-sm border border-transparent hover:border-primary/20 hover:-translate-y-2 duration-300">
+                    <span class="text-xs font-semibold bg-primary/10 text-primary px-3 py-1 rounded-full">Personal</span>
+                    <h4 class="text-xl font-bold mt-3 mb-2 flex items-center justify-between">
+                        Student Management System <span class="text-xs text-slate-400 font-normal">View Live ↗</span>
+                    </h4>
+                    <p class="text-slate-600">Responsive shopping cart and product grid layout built comprehensively using Tailwind CSS.</p>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="education" class="py-24 bg-white">
+    <div class="max-w-5xl mx-auto px-8">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl font-bold text-primary">Education</h2>
+            <div class="w-24 h-1 bg-accent mx-auto mt-4 rounded-full"></div>
+        </div>
+        <div class="bg-slate-50 p-8 rounded-2xl shadow-md border-t-4 border-primary">
+            <h3 class="text-2xl font-bold text-primary mb-1">Computer Science Student</h3>
+            <p class="text-slate-500 font-medium mb-2 text-lg">Polytechnic University (Myitkyina)</p>
+            <p class="text-accent font-semibold mb-4">2023 - Present</p>
+            <p class="text-slate-600 leading-8 text-lg">Studying software development, web technologies, databases and programming fundamentals.</p>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="py-24 bg-slate-50">
+    <div class="max-w-5xl mx-auto px-6 lg:px-8 text-center">
+        <div class="mb-12">
+            <h2 class="text-4xl font-extrabold text-primary tracking-tight">Contact Me</h2>
+            <div class="w-16 h-1 bg-accent mx-auto mt-4 rounded-full"></div>
+        </div>
+        <div class="grid sm:grid-cols-3 gap-6 max-w-4xl mx-auto pt-6">
+            
+            <a href="mailto:myathandarko4@gmail.com" class="group bg-white p-8 rounded-2xl shadow-sm border border-slate-100 flex flex-col items-center justify-center gap-3 hover:shadow-md hover:-translate-y-1 transition-all duration-300">
+                <div class="w-14 h-14 bg-primary/5 rounded-2xl flex items-center justify-center text-primary text-2xl group-hover:bg-primary group-hover:text-white transition-all duration-300">📧</div>
+                <div class="text-center">
+                    <p class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-1">Email Me</p>
+                    <span class="text-slate-700 font-bold group-hover:text-accent duration-200 block text-base truncate max-w-[180px]">myathandarko4@gmail.com</span>
+                </div>
+            </a>
+
+            <a href="tel:+959785633640" class="group bg-white p-8 rounded-2xl shadow-sm border border-slate-100 flex flex-col items-center justify-center gap-3 hover:shadow-md hover:-translate-y-1 transition-all duration-300">
+                <div class="w-14 h-14 bg-secondary/5 rounded-2xl flex items-center justify-center text-secondary text-2xl group-hover:bg-secondary group-hover:text-white transition-all duration-300">📞</div>
+                <div class="text-center">
+                    <p class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-1">Call Me</p>
+                    <span class="text-slate-700 font-bold group-hover:text-accent duration-200 block text-base">+95 9 785 633 640</span>
+                </div>
+            </a>
+
+            <a href="https://www.facebook.com/farty.cheese.mya" target="_blank" class="group bg-white p-8 rounded-2xl shadow-sm border border-slate-100 flex flex-col items-center justify-center gap-3 hover:shadow-md hover:-translate-y-1 transition-all duration-300">
+                <div class="w-14 h-14 bg-blue-50 text-blue-600 rounded-2xl flex items-center justify-center group-hover:bg-blue-600 group-hover:text-white transition-all duration-300">
+                    <svg class="w-7 h-7 fill-current" viewBox="0 0 24 24">
+                        <path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c4.56-.93 8-4.96 8-9.8z"/>
+                    </svg>
+                </div>
+                <div class="text-center">
+                    <p class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-1">Facebook</p>
+                    <span class="text-slate-700 font-bold group-hover:text-blue-600 duration-200 block text-base">Mya Thandar Ko</span>
+                </div>
+            </a>
+
+        </div>
+    </div>
+</section>
+
+
+<footer class="bg-primary text-slate-400 py-12 border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-8 flex flex-col md:flex-row justify-between items-center gap-6">
+        
+        <div class="text-center md:text-left">
+            <a href="#home" class="text-xl font-extrabold tracking-wider text-white font-mono hover:text-accent duration-300">
+                &lt;<span class="text-accent">Mya</span>&nbsp;/&gt;
+            </a>
+            <p class="text-xs text-slate-500 mt-2">Designed & Handcrafted with passion.</p>
+        </div>
+
+    
+        <div class="text-center md:text-right font-sans tracking-wide">
+            <p class="text-sm text-slate-300">
+                © 2026 <span class="text-accent font-semibold">Mya Thandar Ko</span>. All Rights Reserved.
+            </p>
+            <p class="text-[11px] text-slate-500 mt-1">Built using HTML, Tailwind CSS & JavaScript</p>
+        </div>
+
+    </div>
+</footer>
+
+<script>
+    
+    const menuBtn = document.getElementById("menuBtn");
+    const mobileMenu = document.getElementById("mobileMenu");
+    if(menuBtn && mobileMenu) {
+        menuBtn.addEventListener("click", () => {
+            mobileMenu.style.right = mobileMenu.style.right === "0px" ? "-100%" : "0px";
+        });
+    }
+    document.querySelectorAll("#mobileMenu a").forEach(link => {
+        link.addEventListener("click", () => { if(mobileMenu) mobileMenu.style.right = "-100%"; });
+    });
+
+
+    const sections = document.querySelectorAll("section");
+    const navLinks = document.querySelectorAll(".nav-link");
+    window.addEventListener("scroll", () => {
+        let current = "";
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop - 150;
+            if (pageYOffset >= sectionTop) { current = section.getAttribute("id"); }
+        });
+        navLinks.forEach(link => {
+            link.classList.remove("text-accent");
+            if (link.getAttribute("href") === "#" + current) { link.classList.add("text-accent"); }
+        });
+    });
+</script>
+</body>
+</html>
